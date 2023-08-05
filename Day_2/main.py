@@ -45,13 +45,23 @@ minutes=60
 seconds=60     
 
 def days_to_hours(nums):
-    print(f"In {nums} we have {nums*hours} hours")
+    if(nums<0):
+        print("wrong choose")
+    else:    
+        print(f"In {nums} we have {nums*hours} hours")
 
 def hours_to_minutes(nums):
-    print(f"In {nums} we have {nums*minutes} minutes")
+    if(nums<0):
+        print("wrong choose")
+    else:        
+        print(f"In {nums} we have {nums*minutes} minutes")
+
 
 def minutes_to_seconds(nums):
-    print(f"In {nums} we have {nums*seconds} seconds")  
+    if(nums<0):
+        print("wrong choose")
+    else:    
+        print(f"In {nums} we have {nums*seconds} seconds")  
 
 if(user_chose==1):
     new_day=int(input("Enter number of days "))
@@ -68,3 +78,4 @@ else:
 
 
   
+# now validate the user input
